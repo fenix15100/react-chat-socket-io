@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/fenix15100/react-chat-socket-io#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket-io": "^1.0.0"
   }
 }
