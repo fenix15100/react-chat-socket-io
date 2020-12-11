@@ -2,12 +2,12 @@
   "name": "react-chat-socket-io",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
-    "rebuild-static-files": "cd client && npm run build && cd ../ && node server.js"
+    "rebuild-static-files": "cd client && npm run build && cd ../server && node index.js"
   },
   "repository": {
     "type": "git",
