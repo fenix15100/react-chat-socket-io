@@ -17,7 +17,8 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require('./UserControll
 app.use(cors());
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, './..client/build')));
+app.use('/static', express.static(path.join(__dirname, "./../client/build/static")));
+app.use('/manifest.json', express.static(path.join(__dirname, "./../client/build", "manifest.json")))
 
 
 // Handles any requests that don't match the ones above
